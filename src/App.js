@@ -40,7 +40,8 @@ export default function App() {
         placeholder={"Search your emoji"}
         style={{
           padding: "1em",
-          minWidth: "80%"
+          minWidth: "80%",
+          borderRadius: "20px"
         }}
       />
       <h2> {emoji} </h2>
@@ -48,7 +49,7 @@ export default function App() {
       {emojis.map((emoji) => (
         <span
           onClick={() => emojiClickHandler(emoji)}
-          style={{ fontSize: "2rem", padding: "0.5rem", cursor: "pointer" }}
+          style={{ fontSize: "2rem", padding: "1rem", cursor: "pointer" }}
           key={emoji}
         >
           {emoji}
